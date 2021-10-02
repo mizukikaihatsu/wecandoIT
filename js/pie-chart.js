@@ -25,12 +25,12 @@ function poll_chart() {
         }
     } else {
         data = {
-            labels: ['賛成', '反対'],
+            labels: ['そう思う！', 'それ以外！'],
             datasets: [{
                 data: [likes, dislikes],
                 backgroundColor: [
-                    '#34d399',
-                    '#f87171'
+                    '#ff9aa9',
+                    '#ffc506'
                 ]
             }]
         }

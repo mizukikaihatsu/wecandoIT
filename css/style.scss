@@ -5,13 +5,14 @@ $font-size-base: 0.9rem;
 $input-btn-padding-x: 1.3rem;
 $input-btn-padding-x-lg: 1.2rem;
 $primary: #ffc116;
-$danger:#ff4136;
-$font-family-base: 'M PLUS Rounded 1c', sans-serif;
+$success:#ffced6;
+$danger:#ffa16b;
+$font-family-base: 'RocknRoll One', sans-serif;
 
 @import "bootstrap/bootstrap.scss";
 
-$cLikesGreen: #33d499;
-$cDislikesRed: #f87171;
+$cLikesGreen: #ff9aa9;
+$cDislikesRed: #ffc506;
 
 .login-form {
     width: 500px;

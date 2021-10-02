@@ -6,14 +6,14 @@ function index($topic, $is_edit)
 {
     $header_title = $is_edit ? 'トピックの編集' : 'トピック作成';
 ?>
-    <h1 class="h2 mb-3"><?php echo $header_title ?></h1>
+    <h1 class="h2 mb-5"><?php echo $header_title ?></h1>
 
     <div class="bg-white p-4 shadow mx-auto rounded">
         <form class="validate-form" action="<?php echo CURRENT_URI; ?>" method="POST" novalidate autocomplete="off">
             <input type="hidden" name="topic_id" value="<?php echo $topic->id; ?>">
             <div class="form-group">
                 <label for="title">タイトル</label>
-                <input type="text" id="title" name="title" value="<?php echo $topic->title; ?>" class="form-control validate-target" required maxlength="30" autofocus>
+                <input type="text" id="title" name="title" value="<?php echo $topic->title; ?>" class="form-control validate-target" required maxlength="40" autofocus>
                 <div class="invalid-feedback"></div>
             </div>
             <div class="form-group">
@@ -25,7 +25,7 @@ function index($topic, $is_edit)
             </div>
             <div class="d-flex align-items-center">
                 <div>
-                    <input type="submit" value="送信" class="btn btn-primary shadow mr-3">
+                    <input type="submit" value="送信" class="btn btn-primary shadow mr-5">
                 </div>
                 <div>
                     <a href="<?php the_url('topic/archive'); ?>">戻る</a>

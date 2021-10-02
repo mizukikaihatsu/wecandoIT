@@ -36,7 +36,7 @@ function topic_main($topic, $from_top_page)
 ?>
     <div>
         <?php if ($from_top_page) :  ?>
-            <h1 class="sr-only">みんなのアンケート</h1>
+            <h1 class="sr-only">トークアバウトごーるど</h1>
             <h2 class="h1">
                 <a class="text-body" href="<?php the_url('topic/detail?topic_id=' . $topic->id); ?>">
                     <?php echo $topic->title; ?>
@@ -53,11 +53,11 @@ function topic_main($topic, $from_top_page)
         <div class="row justify-content-around">
             <div class="likes-green col-auto">
                 <div class="display-1"><?php echo $topic->likes; ?></div>
-                <div class="h4 mb-0">賛成</div>
+                <div class="h4 mb-0">そう思う！</div>
             </div>
             <div class="dislikes-red col-auto">
                 <div class="display-1"><?php echo $topic->dislikes; ?></div>
-                <div class="h4 mb-0">反対</div>
+                <div class="h4 mb-0">それ以外！</div>
             </div>
         </div>
     </div>
@@ -70,10 +70,10 @@ function comment_form($topic)
 
     <?php if (Auth::isLogin()) : ?>
         <form action="<?php the_url('topic/detail'); ?>" method="POST" novalidate autocomplete="off">
-            <span class="h4">あなたは賛成？それとも反対？</span>
+            <span class="h4">あなたは同じ意見？<br>それとも違う意見？<br>どう思うか教えて！</span>
             <input type="hidden" name="topic_id" value="<?php echo $topic->id; ?>">
             <div class="form-group">
-                <textarea class="w-100 border-light" name="body" id="body" rows="5" maxlength="100"></textarea>
+                <textarea class="w-100 border-light" name="body" id="body" rows="5" maxlength="250"></textarea>
             </div>
 
             <div class="container">
@@ -81,11 +81,11 @@ function comment_form($topic)
                     <div class="col-auto d-flex align-items-center pl-0">
                         <div class="form-check-inline">
                             <input class="form-check-input" type="radio" id="agree" name="agree" value="1" required checked>
-                            <label for="agree" class="form-check-label">賛成</label>
+                            <label for="agree" class="form-check-label">そう思う！</label>
                         </div>
                         <div class="form-check-inline">
                             <input class="form-check-input" type="radio" id="disagree" name="agree" value="0" required>
-                            <label for="disagree" class="form-check-label">反対</label>
+                            <label for="disagree" class="form-check-label">それ以外！</label>
                         </div>
 
                     </div>

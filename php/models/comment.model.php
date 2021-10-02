@@ -26,11 +26,11 @@ class CommentModel extends AbstractModel
         $res = true;
 
         if (!isset($val)) {
-            Msg::push(Msg::ERROR, '賛成か反対か選択してください。');
+            Msg::push(Msg::ERROR, 'そう思う！かそれ以外！か選択してください。');
 
             // publishedが0、または1以外の時
             if (!($val == 0 || $val == 1)) {
-                Msg::push(Msg::ERROR, '賛成か反対、どちらかの値を選択してください。');
+                Msg::push(Msg::ERROR, 'そう思う！かそれ以外！、どちらかの値を選択してください。');
             }
 
             $res = false;
@@ -48,9 +48,9 @@ class CommentModel extends AbstractModel
     {
         $res = true;
 
-        if (mb_strlen($val) > 100) {
+        if (mb_strlen($val) > 250) {
 
-            Msg::push(Msg::ERROR, 'コメントは100文字以内で入力してください。');
+            Msg::push(Msg::ERROR, 'コメントは250文字以内で入力してください。');
             $res = false;
 
         }

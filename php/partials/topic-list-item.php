@@ -25,11 +25,11 @@ function topic_list_item($topic, $title_url, $with_status)
                 </div>
                 <div class="likes-green col-auto min-w-100">
                     <div class="h1 mb-0"><?php echo $topic->likes ?></div>
-                    <div class="mb-0">賛成</div>
+                    <div class="mb-0">そう思う！</div>
                 </div>
                 <div class="dislikes-red col-auto min-w-100">
                     <div class="h1 mb-0"><?php echo $topic->dislikes ?></div>
-                    <div class="mb-0">反対</div>
+                    <div class="mb-0">それ以外！</div>
                 </div>
             </div>
         </div>

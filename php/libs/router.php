@@ -28,7 +28,7 @@ function route($rpath, $method) {
     } catch (Throwable $e) {
 
         Msg::push(Msg::DEBUG, $e->getMessage());
-        Msg::push(Msg::ERROR, '何かがおかしいようです。。');
+        Msg::push(Msg::ERROR, '管理者にお問い合わせ下さい');
         redirect('404');
         
     }

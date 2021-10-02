@@ -12,7 +12,7 @@ function index($topic, $comments)
     <ul class="list-unstyled">
         <?php foreach($comments as $comment) : ?>
             <?php 
-                    $agree_label = $comment->agree ? '賛成' : '反対';
+                    $agree_label = $comment->agree ? 'そう思う！' : 'それ以外！';
                     $agree_cls = $comment->agree ? 'badge-success' : 'badge-danger';
                 ?>
             <li class="bg-white shadow mb-3 rounded p-3">

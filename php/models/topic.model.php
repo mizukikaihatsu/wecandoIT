@@ -50,9 +50,9 @@ class TopicModel extends AbstractModel
 
         } else {
 
-            if (mb_strlen($val) > 30) {
+            if (mb_strlen($val) > 40) {
 
-                Msg::push(Msg::ERROR, 'タイトルは30文字以内で入力してください。');
+                Msg::push(Msg::ERROR, 'タイトルは40文字以内で入力してください。');
                 $res = false;
 
             }
