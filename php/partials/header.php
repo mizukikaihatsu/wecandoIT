@@ -24,8 +24,9 @@ function header() {
             <header class="container my-5">
                 <nav class="row align-items-center py-2">
                     <a href="<?php the_url('/'); ?>" class="col-md d-flex align-items-center mb-3 mb-md-0">
-                        <img width="70" class="mr-2" src="<?php echo BASE_IMAGE_PATH; ?>wecandoit-siterogo.png" alt="We can do IT(アイティ)！　サイトロゴ">
-                        <span class="h2 font-weight-bold mb-0">We can do IT(アイティ)！</span>
+                        <img width="70" class="mr-2" src="<?php echo BASE_IMAGE_PATH; ?>wecandoit-siterogo.png" alt="We can do IT！　サイトロゴ">
+                        <img width="300" class="mr-2" src="<?php echo BASE_IMAGE_PATH; ?>title.png" alt="サイトタイトル">
+                        <?php // <span class="h2 font-weight-bold mb-0">We can do IT！</span> ?>
                     </a>
                     <div class="col-md-auto">
                         <?php if(Auth::isLogin()) : ?>

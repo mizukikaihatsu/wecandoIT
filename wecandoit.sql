@@ -88,7 +88,7 @@ INSERT INTO `comments` (`id`, `topic_id`, `agree`, `body`, `user_id`, `del_flg`)
 (17, 4, 1, 'SwiftUIを使って、簡単にUI作れるので直感的にいいかなと思います。', 'test', 0),
 (18, 4, 1, '僕の知る限り、Swiftに関して国内で一番詳しいエンジニアが集う場: "わいわいswiftc" https://iosdiscord.connpass.com', 'test', 0),
 (19, 4, 1, 'こちらもおすすめコミュニティ: https://medium.com/swift-column/discord-ios-20d586e373c0', 'test', 0),
-(20, 4, 0, '何をやりたいかによって、そもそもSwiftを学ぶのが最短なのか結論変わると思いました。iOSアプリ', 'test', 0),
+(20, 4, 0, '何をやりたいかによって、そもそもSwiftを学ぶのが最短なのか結論変わると思いました。', 'test', 0),
 (21, 4, 0, 'Webも同時に開発できるFlutterがおすすめです。', 'test', 0),
 (22, 4, 0, 'swiftは言語を覚えるというよりmac/iosに特化した開発の手法を知るということになるかと', 'test', 0),
 (23, 4, 1, '参考にしてね！国内最大のカンファレンス: https://twitter.com/iosdcjp', 'test', 0),
@@ -103,9 +103,9 @@ INSERT INTO `comments` (`id`, `topic_id`, `agree`, `body`, `user_id`, `del_flg`)
 --
 
 INSERT INTO `topics` (`id`, `title`, `published`, `views`, `likes`, `dislikes`, `user_id`, `del_flg`) VALUES
-(1, 'Go言語は使った方がいい？', 1, 25, 4, 4, 'test', 0),
-(2, 'VueやReactを学習した方がいい？', 1, 9, 2, 1, 'test', 0),
-(3, 'バックエンドエンジニアはレッドオーシャンで、避けた方がいい?', 1, 21, 1, 3, 'test', 0),
+(1, 'Go言語は使った方がいい?', 1, 25, 4, 4, 'test', 0),
+(2, 'VueやReactを学習した方がいい?', 1, 9, 2, 1, 'test', 0),
+(3, 'バックエンドエンジニアはレッドオーシャン?避けた方がいい?', 1, 21, 1, 3, 'test', 0),
 (4, 'iOS App開発志望ならSwift？', 1, 38, 4, 5, 'test', 0);
 --(5, 'エラーが発生したらすぐ質問するのを推奨してる？', 1, 38, 4, 5, 'test', 0),
 
