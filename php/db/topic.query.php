@@ -98,7 +98,7 @@ class TopicQuery
 
         $db = new DataSource;
         $sql = '
-        select count(1) from pollapp.topics t 
+        select count(1) from wecandoit.topics t 
         where t.id = :topic_id
             and t.user_id = :user_id
             and t.del_flg != 1;
