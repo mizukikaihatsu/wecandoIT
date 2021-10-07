@@ -12,7 +12,7 @@ function index() {
         <form class="validate-form" action="<?php echo CURRENT_URI; ?>" method="POST" novalidate autocomplete="off">
             <div class="form-group">
                 <label for="id">ユーザーID</label>
-                <input id="id" type="text" name="id" class="form-control validate-target" minlength="4" required maxlength="10" pattern="[a-zA-Z0-9]+" autofocus />
+                <input id="id" type="text" name="id" class="form-control validate-target" minlength="4" required maxlength="10" pattern="[a-zA-Z0-9]+" autofocus tabindex="1"/>
                 <div class="invalid-feedback"></div>
             </div>
             <div class="form-group">
@@ -22,14 +22,14 @@ function index() {
             </div>
             <div class="form-group">
                 <label for="nickname">ニックネーム</label>
-                <input id="nickname" type="text" name="nickname" class="form-control validate-target" required maxlength="10">
+                <input id="nickname" type="text" name="nickname" class="form-control validate-target" required maxlength="10"  tabindex="3">
                 <div class="invalid-feedback"></div>
             </div>
             <div class="d-flex align-items-center justify-content-between">
                 <div>
                     <a href="<?php the_url('login'); ?>">ログインへ</a>
                 </div>
-                <div>
+                <div tabindex="4">
                     <input type="submit" value="登録" class="btn btn-primary shadow">
                 </div>
             </div>
